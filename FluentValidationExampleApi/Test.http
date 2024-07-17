@@ -1,0 +1,14 @@
+@FluentValidationExampleApi_HostAddress = http://localhost:5197
+
+POST {{FluentValidationExampleApi_HostAddress}}/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "LastName-123",
+  "email": "@invalid@email",
+  "password": "pass",
+  "confirmPassword": "nomatch"
+}
+###
